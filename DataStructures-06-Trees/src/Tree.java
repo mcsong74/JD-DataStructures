@@ -52,15 +52,30 @@ public class Tree {
         traversePreOrder(root.rightChild);
     }
     //In order: Left - Root - Right
-
     public void traverseInOrder(){
-        traversePreOrder(root);
+        traverseInOrder(root);
     }
     private void traverseInOrder(Node root){
         if(root==null){
             return;
         }
-        System.out.println(root.value+", ");
+        traverseInOrder(root.leftChild);
+        System.out.print(root.value+", ");
+        traverseInOrder(root.rightChild);
+
+    }
+    //Post order: Left - Right - Root
+    public void traversePostOrder(){
+        traversePostOrder(root);
+    }
+    private void traversePostOrder(Node root){
+        if(root==null){
+            return;
+        }
+        traversePostOrder(root.leftChild);
+        traversePostOrder(root.rightChild);
+        System.out.print(root.value+", ");
+
 
     }
 

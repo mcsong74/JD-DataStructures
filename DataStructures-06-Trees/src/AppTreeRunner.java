@@ -7,6 +7,10 @@ public class AppTreeRunner {
         }
         System.out.println("PreOrder Traversal Tree");
         myTree.traversePreOrder();
+        System.out.println("\nInOrder Traversal Tree");
+        myTree.traverseInOrder();
+        System.out.println("\nPost Traversal Tree");
+        myTree.traversePostOrder();
 //
 //        for(int i=0; i<numberArray.length; i++){
 //            myTree.insert(numberArray[i]);
