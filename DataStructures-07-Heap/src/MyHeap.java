@@ -12,7 +12,7 @@ public class MyHeap {
     }
 
     public void insert(int value) {
-        if (isFull()) throw new IllegalAccessException();
+        if (isFull()) throw new IllegalArgumentException();
 
         heap[size++]=value;
         bubbleUp();
