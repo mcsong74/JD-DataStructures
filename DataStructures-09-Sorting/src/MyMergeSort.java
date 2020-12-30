@@ -1,3 +1,5 @@
+import java.util.Arrays;
+
 public class MyMergeSort {
     public static void mergeSort(int[] array){
         if(array.length<2) return; //termination criteria
@@ -17,12 +19,14 @@ public class MyMergeSort {
         mergeSort(rightArray); // call merge sort recursively for right
 
         mergeArray(leftArray, rightArray, array);
+        System.out.println("array = "+Arrays.toString(array));
 
     }
 
     private static void mergeArray(int[] left, int[] right, int[] result){
         int leftIndex=0, rightIndex=0, resultIndex=0;
         while(leftIndex<left.length && rightIndex < right.length){
+            //Both arrays have items
             if(left[leftIndex]<=right[rightIndex]) {
                 result[resultIndex++] = left[leftIndex++];
                 //resultIndex++; leftIndex++;
@@ -31,11 +35,13 @@ public class MyMergeSort {
                 //resultindex++; rightIndex++;
             }
         }
-        while(leftIndex<left.length) {
+        while(leftIndex<left.length) { //left array has some items
             result[resultIndex++]=left[leftIndex++];
+            //resultIndex++; leftIndex++;
         }
-        while (rightIndex<right.length) {
+        while (rightIndex<right.length) { //left array has some items
             result[resultIndex++]=right[rightIndex++];
+            //resultindex++; rightIndex++;
         }
     }
 
