@@ -1,7 +1,7 @@
 public class MyInsertionSort {
 
     public static int[] insertionSort(int[] array){
-
+        //i = unsorted index, j = sorted index
         for(int i=1; i<array.length; i++){
             int current=array[i];
             int j=i-1;
