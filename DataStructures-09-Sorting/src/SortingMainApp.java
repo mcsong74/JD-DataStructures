@@ -9,5 +9,9 @@ public class SortingMainApp {
         System.out.println("Selection sorted = "+Arrays.toString(MySelectionSort.selectionSort(myArr)));
 
         System.out.println("Insertion Sorted = "+Arrays.toString(MyInsertionSort.insertionSort(myArr)));
+
+        MyMergeSort.mergeSort(myArr);
+        System.out.println("Merged Sort = "+Arrays.toString(myArr));
+
     }
 }
