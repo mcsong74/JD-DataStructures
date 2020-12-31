@@ -8,5 +8,7 @@ public class SearchMainApp {
         System.out.println("Ternary search, index = "+MyTernarySearch.ternarySearch(myArr, 112));
 
         System.out.println("Jump search, index = "+MyJumpSearch.jumpSearch(myArr, 112));
+
+        System.out.println("Exponential search, index = "+MyExponentialSearch.exponentialSearch(myArr, 112));
     }
 }
