@@ -7,7 +7,7 @@ public class MyBinarySearch {
         if (right<left) return -1;
         int middle=(left+right)/2;
         if (array[middle]==data) return middle;
-        if(data<array[middle]) return binarySearchRec(array, data, left, middle);
+        if(data<array[middle]) return binarySearchRec(array, data, left, middle-1);
         return binarySearchRec(array, data, middle+1, right);
     }
 
