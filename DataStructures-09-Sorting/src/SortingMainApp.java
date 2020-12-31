@@ -13,6 +13,7 @@ public class SortingMainApp {
         MyMergeSort.mergeSort(myArr);
         System.out.println("Merged Sort\t\t\t= "+Arrays.toString(myArr));
 
+        myArr=new int[]{8,2,4,1,3};
         var quickSort=new MyQuickSort();
         quickSort.sort(myArr);
         System.out.println("Quick Sort\t\t\t= "+Arrays.toString(myArr));
