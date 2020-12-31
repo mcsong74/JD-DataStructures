@@ -5,5 +5,6 @@ public class SearchMainApp {
         System.out.println("Binary search, index = "+MyBinarySearch.binarySearch(myArr, 112));
         System.out.println("Binary search,Iteration,  index = "+MyBinarySearchIterative.binarySearchIterative(myArr,
                 112));
+        System.out.println("Ternary search, index = "+MyTernarySearch.ternarySearch(myArr, 112));
     }
 }
