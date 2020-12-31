@@ -1,8 +1,8 @@
 public class SearchMainApp {
     public static void main(String[] args) {
-        int[] myArr=new int[]{1,2,3,4,5,6};
-
-        System.out.println("Binary search, index = "+MyBinarySearch.binarySearch(myArr, 6));
+        int[] myArr=new int[]{1,2,3,4,5,6,89,100,109,112,113};
+        System.out.println("Linear search, index = "+MyLinearSearch.linearSearch(myArr, 112));
+        System.out.println("Binary search, index = "+MyBinarySearch.binarySearch(myArr, 112));
 
     }
 }
